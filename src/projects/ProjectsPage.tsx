@@ -32,15 +32,24 @@ function ProjectsPage() {
     loadProjects();
   }, [currentPage]);
   const saveProject = (project: Project) => {
-    let updatedProjects = projects.map((p: Project) => {
-      return p.id === project.id ? project : p;
-    });
-    setProjects(updatedProjects);
+    projectAPI
+      .put(project)
+      .then((updatedProject) => {
+        let updatedProjects = projects.map((p: Project) => {
+          return p.id === project.id ? new Project(updatedProject) : p;
+        });
+        setProjects(updatedProjects);
+      })
+      .catch((e) => {
+        if (e instanceof Error) {
+          setError(e.message);
+        }
+      });
   };
 
   return (
     <>
-      <h1>Projects</h1>
+      <h1 className="text-center">Projects</h1>
       {error && (
         <div className="row">
           <div className="card large error">
@@ -55,8 +64,8 @@ function ProjectsPage() {
       )}
       <ProjectList projects={projects} onSave={saveProject} />
       {!loading && !error && (
-        <div className="row">
-          <div className="col-sm-12">
+        <div className="row justify-center">
+          <div className="col-sm-4">
             <div className="button-group fluid">
               <button className="button primary" onClick={handleMoreClick}>
                 Read More...

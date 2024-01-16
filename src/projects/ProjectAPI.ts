@@ -62,6 +62,23 @@ const projectAPI = {
         );
       });
   },
+  put(project: Project) {
+    return fetch(`${url}/${project.id}`, {
+      method: "PUT",
+      body: JSON.stringify(project),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then(checkStatus)
+      .then(parseJSON)
+      .catch((error: TypeError) => {
+        console.log("log client error " + error);
+        throw new Error(
+          "There was an error updating the project. Please try again."
+        );
+      });
+  },
 };
 
 export { projectAPI };

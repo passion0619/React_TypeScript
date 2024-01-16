@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Project } from './Project';
-import ProjectCard from './ProjectCard';
-import ProjectForm from './ProjectForm';
+import React, { useState } from "react";
+import { Project } from "./Project";
+import ProjectCard from "./ProjectCard";
+import ProjectForm from "./ProjectForm";
 
 interface ProjectListProps {
   projects: Project[];
@@ -20,7 +20,7 @@ function ProjectList({ projects, onSave }: ProjectListProps) {
   };
 
   return (
-    <div className="row">
+    <div className="row justify-center">
       {projects.map((project) => (
         <div key={project.id} className="cols-sm">
           {project === projectBeingEdited ? (
