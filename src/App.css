@@ -1,0 +1,10 @@
+header {
+  height: 5.1875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.button.active {
+  border: 1px solid var(--fore-color);
+}
