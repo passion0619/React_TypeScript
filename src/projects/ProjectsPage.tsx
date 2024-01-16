@@ -3,9 +3,9 @@ import { projectAPI } from "./ProjectAPI";
 import { Project } from "./Project";
 import ProjectList from "./ProjectList";
 
-function ProjectsPage() {
-  const [projects, setProjects] = useState<Project[]>([]);
+function ProjectsPage(props: any) {
   const [loading, setLoading] = useState(false);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [error, setError] = useState<string | undefined>(undefined);
   const [currentPage, setCurrentPage] = useState(1);
   const handleMoreClick = () => {

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import ProjectPage from "./projects/ProjectsPage";
+import ProjectsPage from "./projects/ProjectsPage";
+import ProjectPage from "./projects/ProjectPage";
 import {
   BrowserRouter as Router,
   Routes,
@@ -26,7 +27,8 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:id" element={<ProjectPage />} />
         </Routes>
       </div>
     </Router>
