@@ -12,6 +12,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   </a>
 </p>
 
-#This used TS, Sass, Redux.
 
-Placeholder API
