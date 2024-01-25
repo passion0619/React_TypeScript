@@ -8,6 +8,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,react,redux,tailwind" />
+    <img src="https://skillicons.dev/icons?i=ts,js,react,redux,tailwind,sass" />
   </a>
 </p>
+
+#This used TS, Sass, Redux.
+
+Placeholder API
