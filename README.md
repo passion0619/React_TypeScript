@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,node,express" />
+    <img src="https://skillicons.dev/icons?i=express,mongo" />
   </a>
 </p>
 
