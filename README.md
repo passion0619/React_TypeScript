@@ -12,5 +12,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   </a>
 </p>
 
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,node,express" />
+  </a>
+</p>
+
 Greated By Danylo M.
 
