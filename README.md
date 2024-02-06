@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Development Environment
 
---- Front ---
+--- Frontend ---
 
 <p align="left">
   <a href="https://skillicons.dev">
