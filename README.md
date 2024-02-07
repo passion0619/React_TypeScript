@@ -8,12 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
 # Development Environment
 
 --- Frontend ---
